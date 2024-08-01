@@ -1,5 +1,4 @@
 
-```markdown
 # Project Name
 
 ## Overview
@@ -51,6 +50,4 @@ project_root/
 └── locales/
     ├── en.json
     └── fr.json
-```
-
 ```
