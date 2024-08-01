@@ -1,4 +1,4 @@
-telegram bot
+# telegram bot
 
 Telebot is a Python library for building Telegram bots. It offers various methods and handlers to interact with the Telegram Bot API. Here's an overview of the most commonly used methods and handlers with examples:
 
@@ -11,7 +11,19 @@ BOT_API = 'YOUR_BOT_TOKEN'
 bot = telebot.TeleBot(BOT_API)
 ```
 
-### Message Handlers
+### Streaming Message Handlers
+```python
+@bot.message_handler(commands=['send_text'])
+def handle_message2(message):
+    
+    data = 'let say this is the example for streaming response'
+    sent_message = bot.send_message(message.chat.id, "...")
+    text=''
+    for item in data.split(" "):
+        if item!='':
+            text += f"{item} "
+            bot.edit_message_text(text, chat_id=sent_message.chat.id, message_id=sent_message.message_id)
+```
 
 #### Command Handlers
 These handlers respond to specific commands.
