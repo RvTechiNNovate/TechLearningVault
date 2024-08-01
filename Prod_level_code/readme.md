@@ -1,3 +1,15 @@
+
+```markdown
+# Project Name
+
+## Overview
+This project is a FastAPI-based application with various services, including authentication and AI integration. It uses Redis for caching and Alembic for database migrations.
+
+## Project Structure
+
+Here’s an overview of the project structure:
+
+```
 project_root/
 │
 ├── main.py            # Entry point, contains FastAPI app initialization
@@ -28,8 +40,8 @@ project_root/
 │       ├── alembic.ini    # Alembic configuration
 │       └── versions/      # Alembic migration versions
 │
-├── redis_client.py        # Redis client setup (new file)
-├── cache_decorator.py     # Cache decorator for endpoints (new file)
+├── redis_client.py        # Redis client setup
+├── cache_decorator.py     # Cache decorator for endpoints
 │
 ├── .gitignore
 ├── .github/
@@ -39,3 +51,6 @@ project_root/
 └── locales/
     ├── en.json
     └── fr.json
+```
+
+```
